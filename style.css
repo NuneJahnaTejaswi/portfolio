@@ -41,7 +41,7 @@ nav{
 }
 
 .logo{
-    width: 330px;
+    width: 30%;
     height: 90px;
 
 }
@@ -84,6 +84,43 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color: #ff004f;
+}
+.home_buttons{
+    /* margin-left:30vw;
+    margin-top:100px;
+    margin-right: auto; */
+    /* display: flex; */
+    position: relative;
+
+ 
+
+}
+.home_buttons a{
+    padding: 15px;
+    margin: 10px;
+    margin-top:100px;
+    /* margin: 50px auto; */
+    width: fit-content;
+    border: 1px solid #ff004f;
+    /* padding: 14px 50px; */
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    background: #ff004f;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
+}
+
+.home_buttons a:hover{
+   
+        background: transparent;
 }
 
 /*--------------------about-------------------*/
@@ -210,6 +247,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    height: 200px;
 }
 .layer{
     width: 100%;
