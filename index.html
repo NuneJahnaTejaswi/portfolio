@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejaswi Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <script src="https://kit.fontawesome.com/b53c762f93.js" crossorigin="anonymous"></script>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Jahna Tejaswi</span></h1>
+                <p id="demo"></p>
+                <script>
+                    var i = 0;
+                    var txt = 'Web Developer';
+                    var speed = 50;
+
+                    function typeWriter() {
+                    if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                        }
+  
+                    }
+                    typeWriter()
+                </script>
+            </div>
+            <a href="#about" class="btn btn2">Know More</a>
+            <a href="#contact" class="btn btn2">Hire Me</a>
+        </div>
+    </div>
+
+<!---------------------------------about--------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Jahna Tejaswi and I'm a Web Developer with a passion for software development. My skills range from developing Algorithms to implementing them in code. I am open to challenges and always looking to expand my knowledge. I enjoy working on challenging problems, solving them, and then delivering the result to my customers.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Html</span></li>
+                        <li>CSS</li>
+                        <li><span>JavaScript</span></li>
+                        <li>Angular</li>
+                        <li><span>Java</span></li>
+                        <li>SpringBoot</li>
+                        <li><span>SQL</span></li>
+                        <li>Python</li>
+                        <li><span>GitHub</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2022</span><br>Bachelor of Technology(CSE)</li>
+                        <li><span>2016-2018</span><br>Intermediate(MPC)</li>
+                        <li><span>2015-2016</span><br>SSC</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Full Stack Development</span><br>Internship by SkillSafari.</li>
+                        <li><span>Springer Conference 11th IACC 2021</span><br>published a paper "Sentimental Analysis on Multi Domain Sentiment DataSet " using SVM and Navie Bayes Algorithm in Springer.</li>
+                        <li><span>IEEE</span><br>Presented on IEEE exploring new
+                            talents about Artificial
+                            Intelligence organized by SITE
+                            IEEE Computer Society Student
+                            Chapter.
+                            </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------services----------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Web Design</h2>
+                <p>Building responsive websites with front-end technologies such as HTML, CSS, Java Script, and Angular and back-end technologies such as SQL, Spring Boot, and Firebase</p>
+                <!------------<a href="#">Learn more</a>---------------->
+            </div>
+            <div>
+                <i class="fa-solid fa-bars"></i>
+                <h2>Competitive Coding</h2>
+                <p>Love in competitive coding on different platforms like Hackerrank, CodeChef, and others. Experience in working with different languages like C, Java, Python and solving problems using various approaches</p>
+                <!----------<a href="#">Learn more</a>------------------>
+            </div>
+            <div>
+                <i class="fa-brands fa-dashcube"></i>
+                <h2>Data Science</h2>
+                <p>can develop strategies for analysing data, preparing data for analysis, exploring, analyzing, and visualising data, building models with data using programming languages such as Python and deploying those models into applications.</p>
+                <!---------<a href="#">Learn more</a>---------------->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------portfolio-------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/online banking.jpg">
+                <div class="layer">
+                    <h3>Online Banking App</h3>
+                    <p>A banking app where the admin and user can access and do different functionalities</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/leaf project .jpg">
+                <div class="layer">
+                    <h3>Leaf Disease Identification</h3>
+                    <p>This project is to identify different leaf diseases for multiple plants using deep convolution neural network
+                        algorithm called VGG19 Algorithm. This project mainly helps to identify the disease of a plant at an early stage.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/sentiment analysis.png">
+                <div class="layer">
+                    <h3>Sentiment Analysis</h3>
+                    <p>This project is used to identify the behaviour of the text data for analyzing the reviews i:e; Positive, Negative or
+                        Neutral using Supervised Learning Algorithms called SVM and Naive Bayes.</p>
+                </div>
+            </div>
+        </div>
+        <!-----------<a href="#" class="btn">See more</a>---------------->
+    </div>
+</div>
+
+<!--------------------------------contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                
+                <p><i class="fa-sharp fa-solid fa-address-card"></i>nune.tejaswi@mphasis.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9133957836</p>
+                <div class="social-icons">
+                    <a href="https://github.com/NuneJahnaTejaswi"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jahna-tejaswi-nune-73725b22a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv1.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/jahnatejaswinune5@gmail.com" method="POST">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="hidden" name="_subject" value="New submission! from portfolio">
+                    <input type="hidden" name="_captcha" value="false">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ jahnatejaswi</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
